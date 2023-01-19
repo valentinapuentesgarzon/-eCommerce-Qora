@@ -18,8 +18,8 @@ function Header() {
       <h5>Hacemos entregas los Martes y Jueves</h5>
     </div>
       {['md'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
-          <Container fluid>
+        <Navbar key={expand} expand={expand} className="mb-3">
+          <Container fluid id='box-2'>
             <Navbar.Brand href="#"><img src={Logo} alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -40,20 +40,15 @@ function Header() {
                   <Nav.Link href="#action2">Contacto</Nav.Link>
                   
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form>
+              
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
       ))}
+      <div id="box-1">
+        <p>Aqui va la nav bar</p>
+      </div>
     </>
   );
 }
