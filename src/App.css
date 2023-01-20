@@ -48,4 +48,14 @@ body {
 
 }
 
+#Btn {
+  width: 15rem !important;
+  background: var( --third-color);
+  border: var(--third-color);
+  margin: 2rem;
+  font-size: 2rem;
+ 
+}
+
+
           

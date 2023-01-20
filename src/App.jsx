@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './Components/Header/header';
 import Home from './Components/Home/Home';
-import Carrusel from './Components/ConoceNuestroHuerto/Carrusel';
+import Huerto from './Components/ConoceNuestroHuerto/Section-huerto'
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header/>
       <Home/>
-      <Carrusel/>
+      <Huerto/>
       
     </>
   )

@@ -8,25 +8,19 @@
     align-items: center;
 }
 
-h1 {
+.box > h1 {
     font-size: 5rem !important;
     margin: 2rem 0 1rem 0 !important;
     color: var(--third-color);
 }
 
-h2 {
+.box > h2 {
     font-size: 3rem !important;
     color: var(--bg-color);
     margin: 0.3rem 0 1rem 0 !important;
 }
 
-#Btn {
-    width: 15rem !important;
-    background: var( --third-color);
-    border: var(--third-color);
-    margin-bottom: 4rem;
-    font-size: 2rem;
-}
+
 
 
 

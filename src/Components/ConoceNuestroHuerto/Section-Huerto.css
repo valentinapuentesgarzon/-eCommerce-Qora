@@ -1,0 +1,31 @@
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#mainContainer > h2 {
+    color: var(--second-color);
+    margin-top: 2rem;
+}
+
+.figure {
+    width: 100%;
+    position: absolute;
+    top: -2rem;
+}
+
+.figure2  {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;   
+}
+
+#wave2 {
+    width: 35%;
+}
