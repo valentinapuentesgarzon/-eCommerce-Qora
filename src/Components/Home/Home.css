@@ -1,4 +1,4 @@
-.box {
+.box{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.342)), url(../../assets/img/Home/frutas-huerto.png);
@@ -17,7 +17,26 @@ h1 {
 h2 {
     font-size: 3rem !important;
     color: var(--bg-color);
+    margin: 0.3rem 0 1rem 0 !important;
 }
+
+#Btn {
+    width: 15rem !important;
+    background: var( --third-color);
+    border: var(--third-color);
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

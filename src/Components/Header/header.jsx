@@ -1,17 +1,23 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
 import './header.css'
-
 import Logo from '../../assets/img/Marca/Logo-sin-fondo.png'
+import ShoppingCart from '../Header/ShoppingCart/ShoppingCart'
+import {useState} from 'react';
 
 function Header() {
+  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
+  
+  const handleOpenOffcanvas = () => {
+    setIsOffcanvasOpen(true);
+  };
+  const handleCloseOffcanvas = () => {
+    setIsOffcanvasOpen(false);
+  };
+
   return (
     <>
     <div id="box-1">
@@ -21,11 +27,13 @@ function Header() {
         <Navbar key={expand} expand={expand} className="mb-3">
           <Container fluid id='box-2'>
             <Navbar.Brand href="#"><img src={Logo} alt="" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={handleOpenOffcanvas} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              show={isOffcanvasOpen}
+              onHide={handleCloseOffcanvas}
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
@@ -40,9 +48,11 @@ function Header() {
                   <Nav.Link href="#action2">Contacto</Nav.Link>
                   
                 </Nav>
+
               
               </Offcanvas.Body>
             </Navbar.Offcanvas>
+            <ShoppingCart onClick={handleOpenOffcanvas} show={isOffcanvasOpen} onHide={handleCloseOffcanvas}/>
           </Container>
         </Navbar>
       ))}
