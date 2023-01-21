@@ -1,0 +1,23 @@
+#mainContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.shape1 {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end; 
+    top:-0rem;
+    
+}
+
+.shape3{
+    display: flex;
+    align-items: baseline;
+    top: -2rem;
+}
+
+.shape3 img {
+    width: 95.6rem;
+}

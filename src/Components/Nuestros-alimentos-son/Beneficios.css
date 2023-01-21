@@ -1,0 +1,49 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.Benefits {
+    width: 80%;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.Benefit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.Benefit > p {
+    font-size: 2rem !important;
+    color: var(--second-color);
+}
+
+.main > h2 {
+    color: var(--third-color);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.shape2{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 5;
+    top: 11rem;
+    
+}
+
+
+
+
