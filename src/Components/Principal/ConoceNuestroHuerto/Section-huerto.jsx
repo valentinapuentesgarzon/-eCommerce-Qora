@@ -2,8 +2,8 @@ import Carrusel from './Carrusel'
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import './Section-Huerto.css'
-import WAVE1 from '../../assets/img/Conoce-nuestro-huerto/onda-1-conoce-huerto.png';
-import WAVE2 from '../../assets/img/Conoce-nuestro-huerto/onda-2-conoce-huerto.png'
+import WAVE1 from '../../../assets/img/Conoce-nuestro-huerto/onda-1-conoce-huerto.png';
+import WAVE2 from '../../../assets/img/Conoce-nuestro-huerto/onda-2-conoce-huerto.png'
 
 
 function Huerto() {

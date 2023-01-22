@@ -1,7 +1,7 @@
 .box{
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.342)), url(../../assets/img/Home/frutas-huerto.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.342)), url(../../../assets/img/Home/frutas-huerto.png);
     display: flex;
     flex-direction: column;
     justify-content: center;

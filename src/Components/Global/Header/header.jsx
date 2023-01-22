@@ -4,8 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './header.css'
-import Logo from '../../assets/img/Marca/Logo-sin-fondo.png'
-import ShoppingCart from '../Header/ShoppingCart/ShoppingCart'
+import Logo from '../../../assets/img/Marca/Logo-sin-fondo.png'
+import ShoppingCart from '../../Global/Header/ShoppingCart/ShoppingCart'
 import {useState} from 'react';
 
 function Header() {

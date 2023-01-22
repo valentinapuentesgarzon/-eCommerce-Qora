@@ -1,11 +1,11 @@
 import React from 'react'
 import './Beneficios.css'
-import IMG1 from '../../assets/img/Beneficios/img-Frescos.png'
-import IMG2 from '../../assets/img/Beneficios/img-LibresQuimicos.png'
-import IMG3 from '../../assets/img/Beneficios/img-seleccionados.png'
-import IMG4 from '../../assets/img/Beneficios/imgCalidad.png'
-import WAVE1 from '../../assets/img/Beneficios/onda1-nuestos-beneficios.png'
-import WAVE2 from '../../assets/img/Beneficios/onda2-beneficios.png'
+import IMG1 from '../../../assets/img/Beneficios/img-Frescos.png'
+import IMG2 from '../../../assets/img/Beneficios/img-LibresQuimicos.png'
+import IMG3 from '../../../assets/img/Beneficios/img-seleccionados.png'
+import IMG4 from '../../../assets/img/Beneficios/imgCalidad.png'
+import WAVE1 from '../../../assets/img/Beneficios/onda1-nuestos-beneficios.png'
+import WAVE2 from '../../../assets/img/Beneficios/onda2-beneficios.png'
 
 
 function Beneficios() {

@@ -2,9 +2,9 @@ import React from 'react'
 import './Productos.css'
 import CarruselProductos from './CarruselProductos'
 import Button from 'react-bootstrap/Button';
-import WAVE1 from '../../assets/img/Productosdestacados/onda1.png'
-import WAVE2 from '../../assets/img/Productosdestacados/onda2.png'
-import WAVE3 from '../../assets/img/Productosdestacados/onda3.png'
+import WAVE1 from '../../../assets/img/Productosdestacados/onda1.png'
+import WAVE2 from '../../../assets/img/Productosdestacados/onda2.png'
+import WAVE3 from '../../../assets/img/Productosdestacados/onda3.png'
 function Productos() {
   return (
     <div id='mainContainer'>

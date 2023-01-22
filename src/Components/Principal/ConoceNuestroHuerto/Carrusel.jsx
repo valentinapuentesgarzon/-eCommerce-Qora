@@ -12,16 +12,16 @@ import "./styles.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-import IMG1 from '../../assets/img/Conoce-nuestro-huerto/Foto-1.jpg';
-import IMG2 from '../../assets/img/Conoce-nuestro-huerto/Foto-2.jpg';
-import IMG3 from '../../assets/img/Conoce-nuestro-huerto/Foto-3.jpg';
-import IMG4 from '../../assets/img/Conoce-nuestro-huerto/Foto-4.jpg';
-import IMG5 from '../../assets/img/Conoce-nuestro-huerto/Foto-5.jpg';
-import IMG6 from '../../assets/img/Conoce-nuestro-huerto/Foto-6.jpg';
-import IMG7 from '../../assets/img/Conoce-nuestro-huerto/Foto-7.jpg';
-import IMG8 from '../../assets/img/Conoce-nuestro-huerto/Foto-8.jpg';
-import IMG10 from '../../assets/img/Conoce-nuestro-huerto/Foto-10.jpg';
-import IMG11 from '../../assets/img/Conoce-nuestro-huerto/Foto-11.jpg';
+import IMG1 from '../../../assets/img/Conoce-nuestro-huerto/Foto-1.jpg';
+import IMG2 from '../../../assets/img/Conoce-nuestro-huerto/Foto-2.jpg';
+import IMG3 from '../../../assets/img/Conoce-nuestro-huerto/Foto-3.jpg';
+import IMG4 from '../../../assets/img/Conoce-nuestro-huerto/Foto-4.jpg';
+import IMG5 from '../../../assets/img/Conoce-nuestro-huerto/Foto-5.jpg';
+import IMG6 from '../../../assets/img/Conoce-nuestro-huerto/Foto-6.jpg';
+import IMG7 from '../../../assets/img/Conoce-nuestro-huerto/Foto-7.jpg';
+import IMG8 from '../../../assets/img/Conoce-nuestro-huerto/Foto-8.jpg';
+import IMG10 from '../../../assets/img/Conoce-nuestro-huerto/Foto-10.jpg';
+import IMG11 from '../../../assets/img/Conoce-nuestro-huerto/Foto-11.jpg';
 export default function Carrusel() {
 
   

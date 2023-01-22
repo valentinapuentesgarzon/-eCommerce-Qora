@@ -34,21 +34,19 @@
 
 
 #Producto {
-    width: 40%;
+    width: 70%;
     margin-bottom: 0.2rem;
 }
 
 #Producto1 {
-    width: 25%;
-}
-#Producto3 {
-    width: 35%;
+    width: 43%;
 }
 
+
 #Producto3, #Product4 {
-    width: 35%;
+    width: 58%;
 }
 
 #Producto6 {
-    width: 30%;
+    width: 60%;
 }

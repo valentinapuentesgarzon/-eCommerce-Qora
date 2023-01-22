@@ -11,12 +11,12 @@ import "./CarruselProductos.css";
 // import required modules
 import { Pagination } from "swiper";
 
-import P1 from '../../assets/img/Productos/Mix-asiaticas.png';
-import P2 from '../../assets/img/Productos/Zuchini-amarillo.png';
-import P3 from '../../assets/img/Productos/tudela.png';
-import P4 from '../../assets/img/Productos/Lechuga-roble-verde.png';
-import P5 from '../../assets/img/Productos/khale.png';
-import P6 from '../../assets/img/Productos/cogollo-morada.png';
+import P1 from '../../../assets/img/Productos/Mix-asiaticas.png';
+import P2 from '../../../assets/img/Productos/Zuchini-amarillo.png';
+import P3 from '../../../assets/img/Productos/tudela.png';
+import P4 from '../../../assets/img/Productos/Lechuga-roble-verde.png';
+import P5 from '../../../assets/img/Productos/khale.png';
+import P6 from '../../../assets/img/Productos/cogollo-morada.png';
 
 export default function App() {
   return (
