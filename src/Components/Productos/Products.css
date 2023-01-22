@@ -1,0 +1,54 @@
+.CardBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.square {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: -1px 3px 4px 1px rgba(201,201,201,0.51);
+    -moz-box-shadow: -1px 3px 4px 1px rgba(201,201,201,0.51);
+    box-shadow: -1px 3px 4px 1px rgba(201,201,201,0.51);
+    border-radius: 10px!important;
+    padding: 10px;
+    
+}
+
+.square img {
+    width: 10vh;
+}
+
+.text > p {
+    margin: 0 0 0 0 !important;
+}
+
+.contador > p {
+    margin: 0 0 0 0 !important;
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#icon{
+    color: var(--third-color);
+}
+.botones {
+    display: flex;
+    gap: 2rem;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+

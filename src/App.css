@@ -48,6 +48,10 @@ body {
 
 }
 
+p {
+  font-family: "Garamond";
+}
+
 #Btn {
   width: 15rem !important;
   background: var( --third-color);
@@ -57,9 +61,15 @@ body {
  
 }
 
-p {
-  font-family: "Garamond";
+#Btn-sm {
+  width: 4rem !important;
+  background: var( --third-color);
+  border: var(--third-color);
+  padding: 1px;
+  
 }
+
+
 
 
           
