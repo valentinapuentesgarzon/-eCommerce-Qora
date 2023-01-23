@@ -22,39 +22,11 @@ import IMG7 from '../../../assets/img/Conoce-nuestro-huerto/Foto-7.jpg';
 import IMG8 from '../../../assets/img/Conoce-nuestro-huerto/Foto-8.jpg';
 import IMG10 from '../../../assets/img/Conoce-nuestro-huerto/Foto-10.jpg';
 import IMG11 from '../../../assets/img/Conoce-nuestro-huerto/Foto-11.jpg';
+import IMG12 from '../../../assets/img/Conoce-nuestro-huerto/Foto-12.png';
 export default function Carrusel() {
 
   
-  const [swiperRef, setSwiperRef] = useState(null);
-
-  let appendNumber = 4;
-  let prependNumber = 1;
-
-  const prepend2 = () => {
-    swiperRef.prependSlide([
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-    ]);
-  };
-
-  const prepend = () => {
-    swiperRef.prependSlide(
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-    );
-  };
-
-  const append = () => {
-    swiperRef.appendSlide(
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-    );
-  };
-
-  const append2 = () => {
-    swiperRef.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-    ]);
-  };
+  const [setSwiperRef] = useState(null);
 
   return (
     
@@ -63,7 +35,7 @@ export default function Carrusel() {
         onSwiper={setSwiperRef}
         slidesPerView={4}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={20}
         pagination={{
           type: "fraction",
         }}
@@ -80,7 +52,8 @@ export default function Carrusel() {
         <SwiperSlide><img src={IMG7} alt="Foto-7" /></SwiperSlide>
         <SwiperSlide><img src={IMG8} alt="Foto-8" /></SwiperSlide>
         <SwiperSlide><img src={IMG10} alt="Foto-10" /></SwiperSlide>
-        <SwiperSlide><img src={IMG11} alt="Foto-11" /></SwiperSlide>        
+        <SwiperSlide><img src={IMG11} alt="Foto-11" /></SwiperSlide>
+        <SwiperSlide><img src={IMG12} alt="Foto-12" /></SwiperSlide>         
         
       </Swiper>
 

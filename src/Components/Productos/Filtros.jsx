@@ -1,35 +1,34 @@
-import Form from 'react-bootstrap/Form';
+import React from 'react'
+import './Products.css'
 
-function CheckInlineExample() {
+
+function Filtros() {
   return (
-    <Form>
-      {['checkbox', 'radio'].map((type) => (
-        <div key={`inline-${type}`} className="mb-3">
-          <Form.Check
-            inline
-            label="1"
-            name="group1"
-            type={type}
-            id={`inline-${type}-1`}
-          />
-          <Form.Check
-            inline
-            label="2"
-            name="group1"
-            type={type}
-            id={`inline-${type}-2`}
-          />
-          <Form.Check
-            inline
-            disabled
-            label="3 (disabled)"
-            type={type}
-            id={`inline-${type}-3`}
-          />
+  <div>
+    <div className="Filtros">
+      <h5>Filtros</h5>
+      <div className="Filtros_radios">
+        <div>
+            <input type="radio" name="Aromáticas" id="" />
+            <label htmlFor=''>Aromática</label>
         </div>
-      ))}
-    </Form>
-  );
+        <div>
+            <input type="radio" name="Frutos" id="" />
+            <label htmlFor=''>Fruto</label>
+        </div>
+        <div>
+            <input type="radio" name="Hortalizas" id="" />
+            <label htmlFor=''>Hortaliza</label>
+        </div>
+        <div>
+            <input type="radio" name="Lechugas" id="" />
+            <label htmlFor=''>Lechuga</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  )
 }
 
-export default CheckInlineExample;
+export default Filtros
+

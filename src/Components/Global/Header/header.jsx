@@ -7,6 +7,7 @@ import './header.css'
 import Logo from '../../../assets/img/Marca/Logo-sin-fondo.png'
 import ShoppingCart from '../../Global/Header/ShoppingCart/ShoppingCart'
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
@@ -26,7 +27,7 @@ function Header() {
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3">
           <Container fluid id='box-2'>
-            <Navbar.Brand href="#"><img src={Logo} alt="" /></Navbar.Brand>
+            <Navbar.Brand as={Link} to= {'/'}><img src={Logo} alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={handleOpenOffcanvas} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -43,7 +44,7 @@ function Header() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#action1">Quénes Somos</Nav.Link>
-                  <Nav.Link href="#action2">Productos</Nav.Link>
+                  <Nav.Link as={Link} to= {'/Components/Productos/Products'}>Productos</Nav.Link>
                   <Nav.Link href="#action2">Cómo comprar</Nav.Link>
                   <Nav.Link href="#action2">Contacto</Nav.Link>
                   

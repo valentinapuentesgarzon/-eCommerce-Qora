@@ -5,13 +5,15 @@ import Button from 'react-bootstrap/Button';
 import WAVE1 from '../../../assets/img/Productosdestacados/onda1.png'
 import WAVE2 from '../../../assets/img/Productosdestacados/onda2.png'
 import WAVE3 from '../../../assets/img/Productosdestacados/onda3.png'
+import { Link } from 'react-router-dom'
+
 function Productos() {
   return (
     <div id='mainContainer'>
         <h2>Lo mas pedido</h2>
         <CarruselProductos/>
         <div className="mb-2">
-        <Button id='Btn'size="lg">
+        <Button as={Link} to= {'/Components/Productos/Products'} id='Btn'size="lg">
         Descubre
         </Button>{' '}
         </div>

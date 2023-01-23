@@ -1,46 +1,56 @@
 import React from 'react'
-import Mix from '../../assets/img/Productos/Mix-asiaticas.png'
 import './Products.css'
 import Button from 'react-bootstrap/Button'
-
-import { AiFillPlusCircle } from 'react-icons/ai';
 import Filtros from './Filtros'
-
-
-
+import { AiFillMinusCircle } from 'react-icons/ai';
+import { AiFillPlusCircle } from 'react-icons/ai';
+import {Productos} from './datos'
+import Header from '../Global/Header/header';
 
 
 function Products() {
   return (
     <>
-        <Filtros/>
+    <Header/>
+    <div id='Contenedor'>
+        <div className="Filtros">
+            <Filtros/>
+        </div>
         <div className= 'CardBox'>
-            <div className="square">
-                <div className="imagen">
-                    <img src={Mix} alt="" />
-                </div>
-                <div className="text">
-                    <p>Mix Asiáticas</p>
-                    <p>x500g</p>
-                    <p>$4500</p>
-                </div>
-                <div className="botones">
-                    <div className="contador">
-                        <div id='icon'></div>
-                        <p>1</p>
-                        <div id='icon'></div>
+           {
+            Productos.map(({Name, Peso, Precio, imagen, alt}, index) => {
+                return (
+                    <div key={index} className="square">
+                        <div className="imagen">
+                            <img src={imagen} alt={alt} />
+                        </div>
+                        <div className="text">
+                            <p>{Name}</p>
+                            <p>{Peso}</p>
+                            <p>${Precio}</p>
+                        </div>
+                        <div className="botones">
+                            <div className="contador">
+                                <div id='icon'><AiFillMinusCircle/></div>
+                                <p>1</p>
+                                <div id='icon'><AiFillPlusCircle/></div>
+                            </div>
+                            <div className="boton">
+                            <Button id="Btn-sm"size="sm">
+                                Agregar
+                            </Button> 
+                            </div>
+                        </div>
                     </div>
-                    <div className="boton">
-                    <Button id="Btn-sm"size="sm">
-                        Agregar
-                    </Button> 
-                    </div>
-                </div>
-            </div>
+                )
+            })
+           }
+            
         </div>
         
 
 
+    </div>
     </>
   )
 }
