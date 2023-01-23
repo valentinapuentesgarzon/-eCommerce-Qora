@@ -8,9 +8,13 @@ import {Productos} from './datos'
 import Header from '../Global/Header/header';
 
 
-function Products() {
+const Products = ({AllProducts, SetAllProducts}) => {
+    const  onAddProduct = () =>{
+        console.log ("add");
+    }
   return (
     <>
+
     <Header/>
     <div id='Contenedor'>
         <div className="Filtros">
@@ -36,7 +40,7 @@ function Products() {
                                 <div id='icon'><AiFillPlusCircle/></div>
                             </div>
                             <div className="boton">
-                            <Button id="Btn-sm"size="sm">
+                            <Button onClick={() => onAddProduct()} id="Btn-sm"size="sm">
                                 Agregar
                             </Button> 
                             </div>
