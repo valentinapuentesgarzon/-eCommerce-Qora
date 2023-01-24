@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 
 footer{
     width: 100%;
@@ -16,7 +15,7 @@ footer{
 
 /* Footer head */
 .Footer-main h4{
-    color: #FFFFFF;
+    color: var(--bg-color);
     margin-bottom: 1.5rem;
     font-size: 25px;
 }
@@ -27,12 +26,11 @@ footer{
 .footicon{
     display: flex;
     font-size: 10px;
-    color: #FFFFFF;
+    color: var(--bg-color);
 }
 .footicon p{
     margin-left: 0.5rem;
     font-size: 15px;
-    font-family: 'Livvic', sans-serif;
 }
 #footicon1 p{
     font-size: 10px;
@@ -53,7 +51,7 @@ footer{
     width: 100%;
 }
 #drop1,#drop2,#drop3,#drop4{
-    background-color: #B7161E!important;
+    background-color: var(--primary-color)!important;
     border: none;
     width: 80%;
     font-family: 'Fredoka One', cursive;
@@ -62,7 +60,7 @@ footer{
     border-radius: 0px!important;
 }
 .dropdown-toggle,.dropdown-toggle4{
-    background-color: #B7161E!important;
+    background-color: var(--primary-color)!important;
     border: none!important;
     font-family: 'Fredoka One', cursive;
     border-radius: 0px!important;
@@ -71,7 +69,7 @@ footer{
     box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
 }
 .Dropdown__Menu{
-    background-color: #FFB200!important;
+    background-color: var(--third-color)!important;
     font-family: 'Livvic', sans-serif;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.404);
 }
@@ -82,8 +80,7 @@ footer{
     padding-left: 1.3rem;
 }
 .Social h3{
-    color: #FFFFFF;
-    font-family: 'Fredoka One', cursive;
+    color: var(--bg-color);
 }
 .Social__links{
     display: flex;

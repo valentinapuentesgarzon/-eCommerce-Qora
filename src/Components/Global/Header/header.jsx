@@ -9,7 +9,7 @@ import ShoppingCart from '../../Global/Header/ShoppingCart/ShoppingCart'
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({AllProducts, setAllProducts}) {
   
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
   
@@ -54,7 +54,9 @@ function Header() {
               
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            <ShoppingCart onClick={handleOpenOffcanvas} show={isOffcanvasOpen} onHide={handleCloseOffcanvas}/>
+            <ShoppingCart onClick={handleOpenOffcanvas} show={isOffcanvasOpen} onHide={handleCloseOffcanvas}
+            AllProducts = {AllProducts} 
+            setAllProducts = {setAllProducts} />
           </Container>
         </Navbar>
       ))}

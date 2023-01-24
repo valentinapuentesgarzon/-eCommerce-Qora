@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 function App() {
     //estado para los productos que se van añadiendo al carrito
-    const [AllProducts, setAllProducts] = useState([]);
+    const [AllProducts,setAllProducts] = useState([]);
 
     //estado para el total
     const [Total, setTotal] = useState(0);
@@ -35,10 +35,6 @@ function App() {
       CountProducts={CountProducts} 
       setCountProducts={setCountProducts}/>}/>
       </Routes>
-
-    
-      
-      
     </>
   )
   

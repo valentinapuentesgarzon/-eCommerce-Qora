@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function ShoppingCartContent() {
+function ShoppingCartContent({}) {
   return (
     <div>ShoppingCartContent</div>
   )

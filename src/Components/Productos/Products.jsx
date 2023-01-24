@@ -4,34 +4,36 @@ import Button from 'react-bootstrap/Button'
 import Filtros from './Filtros'
 import { AiFillMinusCircle } from 'react-icons/ai';
 import { AiFillPlusCircle } from 'react-icons/ai';
-import {Productos} from './datos'
+import {Productos} from './datos.js'
 import Header from '../Global/Header/header';
 
 
-const Products = ({AllProducts, SetAllProducts}) => {
-    const  onAddProduct = () =>{
-        console.log ("add");
+const Products = ({AllProducts, setAllProducts}) => {
+    const  onAddProduct = (product) =>{
+        setAllProducts([...AllProducts, product])
     }
   return (
     <>
 
-    <Header/>
+    <Header
+    AllProducts={AllProducts} 
+    setAllProducts={setAllProducts} />
     <div id='Contenedor'>
         <div className="Filtros">
             <Filtros/>
         </div>
         <div className= 'CardBox'>
            {
-            Productos.map(({Name, Peso, Precio, imagen, alt}, index) => {
+            Productos.map( product => {
                 return (
-                    <div key={index} className="square">
+                    <div key={product.id} className="square">
                         <div className="imagen">
-                            <img src={imagen} alt={alt} />
+                            <img src={product.imagen} alt={product.alt} />
                         </div>
                         <div className="text">
-                            <p>{Name}</p>
-                            <p>{Peso}</p>
-                            <p>${Precio}</p>
+                            <p>{product.Name}</p>
+                            <p>{product.Peso}</p>
+                            <p>${product.Precio}</p>
                         </div>
                         <div className="botones">
                             <div className="contador">
@@ -40,7 +42,7 @@ const Products = ({AllProducts, SetAllProducts}) => {
                                 <div id='icon'><AiFillPlusCircle/></div>
                             </div>
                             <div className="boton">
-                            <Button onClick={() => onAddProduct()} id="Btn-sm"size="sm">
+                            <Button onClick={() => onAddProduct(product)} id="Btn-sm"size="sm">
                                 Agregar
                             </Button> 
                             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import DalpetIcon from "../../assets/img/Marca/logo-footer.png"
-import DalpetVariant from "../../assets/img/Marca/Icon-phone.png"
+import DalpetIcon from "../../../assets/img/Marca/logo-footer.png"
+import DalpetVariant from "../../../assets/img/Marca/Icon-phone.png"
 import {GoLocation} from 'react-icons/go'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
@@ -11,7 +11,6 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Link} from 'react-router-dom'
-import './footer.css'
 
 const Footer = () => {
   return (

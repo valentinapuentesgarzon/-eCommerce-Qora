@@ -28,8 +28,11 @@ function OffCanvasExample({ AllProducts, setAllProducts, name, ...props }) {
               <Offcanvas.Header closeButton id="shoping-cart__header">
                 <Offcanvas.Title id='tittle'> Tu Mercado <GiFruitBowl/></Offcanvas.Title>
               </Offcanvas.Header>
+              <ShoppingCartContent
+                  AllProducts = {AllProducts} 
+                  setAllProducts = {setAllProducts}/>
             </Offcanvas>
-            <ShoppingCartContent/>
+            
           </>
         ) : ( 
           <>
@@ -54,11 +57,15 @@ function OffCanvasExample({ AllProducts, setAllProducts, name, ...props }) {
   );
 }
 
-function ShopingCart() {
+function ShopingCart({AllProducts, setAllProducts}) {
   return (
     <>
       {['end'].map((placement, idx) => (
-        <OffCanvasExample key={idx} placement={placement} name={<BsFillBagFill id="shoping-cart"/>} />
+        <OffCanvasExample 
+        AllProducts = {AllProducts} 
+        setAllProducts = {setAllProducts}
+         key={idx} placement={placement} 
+         name={<BsFillBagFill id="shoping-cart"/>} />
       ))}
     </>
   );
