@@ -28,7 +28,7 @@ function Header({AllProducts, setAllProducts}) {
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3">
           <Container fluid id='box-2'>
-            <Navbar.Brand as={Link} to= {'/'}><img src={Logo} alt="" /></Navbar.Brand>
+            <Link to= {'/'}><img id='logo'src={Logo} alt="QORA" /></Link>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={handleOpenOffcanvas} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -42,9 +42,9 @@ function Header({AllProducts, setAllProducts}) {
                   Menú
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body id='Nav-bar1'>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Quénes Somos</Nav.Link>
+                  <Nav.Link href="#action1">Quiénes Somos</Nav.Link>
                   <Nav.Link as={Link} to= {'/Components/Productos/Products'}>Productos</Nav.Link>
                   <Nav.Link href="#action2">Cómo comprar</Nav.Link>
                   <Nav.Link href="#action2">Contacto</Nav.Link>
@@ -60,8 +60,15 @@ function Header({AllProducts, setAllProducts}) {
           </Container>
         </Navbar>
       ))}
-      <div id="box-1">
-        <p>Aqui va la nav bar</p>
+      <div id="box-3">
+        <Offcanvas.Body id='Nav-bar2'>
+          <Nav className="justify-content-start flex-grow-1 pe-3">
+            <Nav.Link id='Tl' href="#action1" >Quiénes Somos</Nav.Link>
+            <Nav.Link id='Tl' as={Link} to= {'/Components/Productos/Products'}>Productos</Nav.Link>
+            <Nav.Link id='Tl' href="#action2">Cómo comprar</Nav.Link>
+            <Nav.Link id='Tl' href="#action2">Contacto</Nav.Link>
+          </Nav>
+         </Offcanvas.Body>
       </div>
     </>
   );

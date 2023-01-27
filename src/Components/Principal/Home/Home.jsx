@@ -5,7 +5,7 @@ import Header from '../../../Components/Global/Header/header'
 import Huerto from '../../Principal/ConoceNuestroHuerto/Section-huerto'
 import Beneficios from '../../Principal/Nuestros-alimentos-son/Beneficios'
 import Productos from '../../Principal/Lo-mas-pedido/Productos'
-import Footer from '../../Global/Footer/footer'
+  
 import { Link } from 'react-router-dom'
 
 function Home({AllProducts, setAllProducts}) {
@@ -27,7 +27,7 @@ function Home({AllProducts, setAllProducts}) {
     <Huerto/>
     <Beneficios/>
     <Productos/>
-    <Footer/>
+    
 
     </>
   )
